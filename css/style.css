@@ -1,0 +1,84 @@
+/**CSS**/
+@import url("reset.css");
+@import url("variables.css");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+/**Components**/
+@import url("components/loading-screen.css");
+@import url("components/header-statusbar.css");
+@import url("components/friends.css");
+@import url("components/nav-bar.css");
+@import url("components/chats.css");
+@import url("components/find.css");
+@import url("components/more.css");
+@import url("components/settings.css");
+@import url("components/chat-room.css");
+@import url("components/no-mobile.css");
+
+#general-main {
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.9);
+}
+#login-main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 85px 70px;
+  font-size: 25px;
+  font-weight: bold;
+}
+#login-main-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 25px;
+  margin-top: -16px;
+}
+#login-main-title__subtitle {
+  margin-top: 30px;
+  font-weight: 100px;
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.login-main-form__form {
+  font-size: 20px;
+  border-style: none;
+  opacity: 0.8;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 25px 0px;
+}
+.login-main-bottom-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 25px;
+  margin-top: 20px;
+}
+.login-main-bottom-form__input {
+  padding: 20px 0px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+#login-main-main-body {
+  position: absolute;
+}
+#login-main-bottom-scan {
+  font-weight: bold;
+  color: rgba(15, 15, 15, 0.7);
+  position: relative;
+  top: 20px;
+  left: 115px;
+}
+.login-main-form__account:focus,
+.login-main-form__password:focus {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.login-main-bottom-form__input:hover {
+  background-color: var(--main-bg-color);
+}
+a:active {
+  color: black;
+}

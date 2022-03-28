@@ -1,0 +1,175 @@
+.general-main-emojis,
+.find-main-emojis {
+  display: flex;
+  justify-content: space-evenly;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 35px;
+}
+.general-main-emojis-div,
+.find-main-emojis-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.general-main-emojis__title__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20px;
+}
+.general-main-emojis__title,
+.find-main-emojis__title {
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+}
+.find-main-emojis__i {
+  padding: 30px;
+}
+.find-main__middle__div {
+  margin: 35px 20px 10px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 140px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+.find-main__middle__top__div {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  font-size: 17px;
+}
+.find-main__middle__bottom__div {
+  position: absolute;
+  font-size: 19px;
+  left: 90px;
+  top: 140px;
+}
+
+/**Nav**/
+.main-header-bar-right__gear {
+  background-color: tomato;
+  position: absolute;
+  top: -800px;
+  right: 18px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: white;
+  padding: 3px;
+}
+.find-footer-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 20px 0px 20px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 17px;
+}
+
+.find-footer-div__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.find-footer-div__top__right {
+  display: flex;
+  align-items: center;
+}
+.fa-find-footer-div__chevron {
+  font-size: 15px;
+}
+.find-footer-div__top__right__scan {
+  display: block;
+  margin-right: 5px;
+}
+.find-footer-div__middle {
+  display: flex;
+  justify-content: space-between;
+  padding: 43px 0px 30px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.find-footer-div__middle__left__span {
+  display: block;
+}
+.find-footer-div__middle__left__div {
+  display: flex;
+  align-items: center;
+}
+.find-footer-div__middle__left__span__first {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+}
+.find-footer-div__middle__left__span__second {
+  padding: 10px 0px;
+}
+.find-footer-div__middle__left__div__img {
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+}
+.find-footer-div__middle-left__div__span {
+  padding: 0px 5px 0px 10px;
+}
+.find-footer-div__middle-left__div__span__two {
+  color: rgb(243, 134, 198);
+}
+.find-footer-div__right__img {
+  border-radius: 10px;
+  height: 110px;
+  width: 110px;
+  position: absolute;
+}
+.find-footer-div__middle_right {
+  position: relative;
+}
+.find-footer-div__bottom__right {
+  position: relative;
+}
+.find-footer-div__right__img__up {
+  top: -20px;
+  right: 0px;
+}
+.find-footer-div__middle_right__likes {
+  position: absolute;
+  color: white;
+  font-size: 13px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.find-footer-div__middle_right__likes__up {
+  right: 5px;
+  bottom: -10px;
+}
+.find-footer-div__middle_right__likes__down {
+  right: 5px;
+  bottom: -10px;
+}
+.find-footer-div__middle_right__likes__i {
+  color: white;
+  margin-right: 5px;
+}
+
+.find-footer-div__right__img__down {
+  top: -20px;
+  right: 0px;
+}
+.find-footer-div__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.find-footer-div__bottom__left__div {
+  display: flex;
+  align-items: center;
+}

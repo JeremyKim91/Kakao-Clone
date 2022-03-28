@@ -1,0 +1,22 @@
+.chats-main__users-name-mini {
+  margin-top: 20px;
+}
+.chats-main__users-name-mini-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.general-main__users-name-mini__div__chats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.chats-main__users-name-mini__name {
+  padding-bottom: 10px;
+}
+.chats-main__users-name-mini__text {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.3);
+}

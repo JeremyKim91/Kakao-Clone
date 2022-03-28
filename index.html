@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome to Kakaotalk</title>
+</head>
+<body>
+    <header>
+        <div id="header-statusbar-div">
+            <div class="header-statusbar-left header-statusbar-statusbar">
+                <span class="header-statusbar-span">
+                    No Service
+                </span>
+                <i class="fa-solid fa-wifi i-statusbar"></i>
+            </div>
+            <div class="header-statusbar-middle header-statusbar-statusbar ">
+                <i class="fa-solid fa-clock i-statusbar"></i>
+                <span class="header-statusbar-span">
+                    12:20
+                </span>
+            </div>
+            <div class="header-statusbar-right header-statusbar-statusbar">
+                    <span class="header-statusbar-span__right">
+                    50%
+                </span>
+                <i class="fa-solid fa-battery-half i-statusbar"></i>
+                <i class="fa-solid fa-bolt-lightning i-statusbar"></i>
+            </div>
+        </div>   
+    </header>
+    <main id="login-main-main-body">
+        <div id="login-main-title">
+            <scan id="login-main-title__title">
+                Welcome to JeremyTalk
+            </scan>
+            <scan id="login-main-title__subtitle">
+                If you have a Kakao Account,<br>
+                log in with your email or phone number.
+            </scan>
+        </div>
+        <form class="login-main-form login-main-bottom-form" method="get" action="friends.html">
+            <input class="login-main-form__account login-main-form__form" type="text" required placeholder="Email or phone number">
+            <input class="login-main-form__password login-main-form__form" minlength="8" required type="password" required placeholder="Password">
+            <input class="login-main-bottom-form__input"
+            type="submit" value="Log In">
+            <input class="login-main-bottom-form__input" type="submit" value="Sign Up">
+
+        </form>
+        <scan id="login-main-bottom-scan">
+            Find Jeremy Account or Password
+        </scan>
+
+
+    </main>
+
+    <div id="no-mobile">
+        <span>화면을 줄여주세요.</span>
+    </div>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/cc09770187.js" crossorigin="anonymous"></script>
+</body>
+</html>

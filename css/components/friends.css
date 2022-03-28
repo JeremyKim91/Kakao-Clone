@@ -1,0 +1,123 @@
+.general-main-top,
+.friends-main-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 24px;
+  opacity: 0.9;
+}
+.general-main__top-left {
+  font-weight: bold;
+  font-size: 30px;
+}
+.general-main__top-right__i {
+  font-size: 25px;
+  margin-left: 25px;
+}
+#friends-main__subtop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 0%, 98%, 1);
+  padding: 15px 0px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+.friends-main__subtop-sutop__i {
+  color: rgba(0, 0, 0, 0.2);
+  margin: 0px 7px;
+  font-size: 20px;
+}
+.friends-main__subtop-sutop__i__chevron {
+  font-size: 13px;
+}
+.general-main__users,
+.friends-main__users {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px 20px 20px;
+}
+.general-main__users__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 35px;
+  margin-right: 15px;
+}
+.general-main__users-name,
+.friends-main__users-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+.general-main__divider {
+  margin: 0px 20px;
+  width: 90%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.general-main__divider-span,
+.friends-main__divider-span {
+  font-weight: 600;
+  margin-top: 15px;
+}
+.general-main__divider-span__i,
+.friends-main__divider-span__i {
+  margin-top: 15px;
+}
+.general-main__users-name-mini,
+.friends-main__users-name-mini {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.general-main__users-name-mini__img,
+.friends-main__users-name-mini__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+  box-shadow: 0 0px 0px 1px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+.general-main__users-name-mini-left,
+.friends-main__users-name-mini-left {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+.general-main__users-name-mini-right__chevron,
+.friends-main__users-name-mini-right__chevron {
+  font-size: 15px;
+  margin-left: 5px;
+}
+.friends-main__users-name-mini-right {
+  display: flex;
+  align-items: center;
+}
+@keyframes hidesplash {
+  from {
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#loading-screen {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hidesplash 2s ease-in forwards;
+}

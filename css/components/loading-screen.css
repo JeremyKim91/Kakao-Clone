@@ -1,0 +1,10 @@
+#loading-screen-body {
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loading-screen {
+  color: #3c1e1e;
+  font-size: 100px;
+}

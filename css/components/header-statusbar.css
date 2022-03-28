@@ -1,0 +1,44 @@
+#header-statusbar-div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.header-statusbar-left {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  align-items: center;
+}
+
+.header-statusbar-middle {
+  display: flex;
+  position: relative;
+  left: 60px;
+  font-weight: bolder;
+  align-items: center;
+}
+
+.header-statusbar-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 99%;
+  align-items: center;
+}
+.header-statusbar-statusbar {
+  margin: 5px 7px;
+}
+.i-statusbar {
+  margin: 0px 3px;
+}
+.fa-wifi {
+  margin: 0px 8px;
+}
+.fa-battery-half {
+  font-size: 22px;
+}
+.header-statusbar-span__right {
+  font-size: 17px;
+}

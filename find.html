@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Find</title>
+</head>
+<body>
+    <header>
+        <div id="header-statusbar-div">
+            <div class="header-statusbar-left header-statusbar-statusbar">
+                <span class="header-statusbar-span">
+                    No Service
+                </span>
+                <i class="fa-solid fa-wifi i-statusbar"></i>
+            </div>
+            <div class="header-statusbar-middle header-statusbar-statusbar ">
+                <i class="fa-solid fa-clock i-statusbar"></i>
+                <span class="header-statusbar-span">
+                    12:20
+                </span>
+            </div>
+            <div class="header-statusbar-right header-statusbar-statusbar">
+                    <span class="header-statusbar-span__right">
+                    50%
+                </span>
+                <i class="fa-solid fa-battery-half i-statusbar"></i>
+                <i class="fa-solid fa-bolt-lightning i-statusbar"></i>
+            </div>
+        </div>   
+    </header>
+    <main id="general-main">
+        <div class="chats-main-top general-main-top">
+            <span class="general-main__top-left">
+                Find
+            </span>
+            <span class="general-main__top-right">
+                <i class="fa-solid fa-magnifying-glass general-main__top-right__i general-main__top-right__i__chats"></i>
+                <a href="settings.html">
+                <i class="fa-solid fa-gear general-main__top-right__i general-main__top-right__i__chats"></i>
+                </a>
+            </span>
+        </div>
+
+        <div class="general-main-emojis find-main-emojis">
+           <div class="general-main-emojis-div find-main-emojis-div">
+            <i class="fa-solid fa-qrcode find-main-emojis__i"></i>
+              <div class="general-main-emojis__title__div" >  
+                <span class="general-main-emojis__title find-main-emojis__title">
+                QR Code
+               </span>
+               </div>
+            </div>
+           <div class="general-main-emojis-div find-main-emojis-div">
+                <i class="fa-solid fa-address-book find-main-emojis__i"></i>
+                <div class="general-main-emojis__title__div" >
+               <span class="general-main-emojis__title find-main-emojis__title">
+                Add by<br>Contacts
+               </span>
+               </div>
+            </div>
+           <div class="general-main-emojis-div find-main-emojis-div">
+            
+            <i class="fa-solid fa-fingerprint find-main-emojis__i"></i>
+                <div class="general-main-emojis__title__div" >  
+               <span class="general-main-emojis__title find-main-emojis__title">
+                    Biometric<br>Verification
+               </span>
+               </div>
+            </div>
+           <div class="general-main-emojis-div find-main-emojis-div">
+            
+            <i class="fa-solid fa-envelope find-main-emojis__i"></i>
+            <div class="general-main-emojis__title__div" >   
+            <span class="general-main-emojis__title find-main-emojis__title">
+                    Email
+               </span>
+               </div>
+            </div>
+
+
+        </div>
+        
+        <div class="find-main__middle__div">
+            <div class="find-main__middle__top__div">
+                <scan id="find-main__middle__top__div__scan">
+                Recommended Friends
+                </scan>
+            </div>
+
+            <div class="find-main__middle__bottom__div">
+                <scan id="find-main__middle__bottom__div">
+                    You have no recommended friends.
+                </scan>
+            </div>
+        </div>
+        
+
+        <footer class="find-footer-div">
+            <div class="find-footer-div__top">
+                <span class="find-footer-div__top__left">
+                    Open Chat
+                </span>
+                <div class="find-footer-div__top__right">
+                    <span class="find-footer-div__top__right__scan">
+                    Go to Openchat Home
+                    </span>
+                    <i class="fa-solid fa-chevron-right fa-find-footer-div__chevron "></i>
+                </div>
+            </div>
+            <div class="find-footer-div__middle">
+                <div class="find-footer-div__middle__left">
+                    <span class="find-footer-div__middle__left__span find-footer-div__middle__left__span__first">#멍멍이</span>
+                    <span class="find-footer-div__middle__left__span find-footer-div__middle__left__span__second">#시츄#강아지옷</span>
+                    <div class="find-footer-div__middle__left__div">
+                        <img class="find-footer-div__middle__left__div__img" src="img/bangkok.jpg">
+                        <span class="find-footer-div__middle-left__div__span">802 members |</span>
+                        <span class="find-footer-div__middle-left__div__span__two">Active</span>
+                    </div>
+                </div>
+                <div class="find-footer-div__middle_right">
+                    <img class="find-footer-div__right__img find-footer-div__right__img__up" src="img/mi-perro.jpg">
+                    <div class="find-footer-div__middle_right__likes find-footer-div__middle_right__likes__up">
+                        <i class="fa-solid fa-heart find-footer-div__middle_right__likes__i"></i>
+                        <span>998</span>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="find-footer-div__bottom">
+                <div class="find-footer-div__bottom__left">
+                    <span  class="find-footer-div__middle__left__span find-footer-div__middle__left__span__first">고양이 대장~</span>
+                    <span class="find-footer-div__middle__left__span find-footer-div__middle__left__span__second">
+                        #고양이별 #rip #짱구와함께 #친하게지내...
+                    </span>
+                    <div class="find-footer-div__bottom__left__div">
+                        <img class="find-footer-div__middle__left__div__img" src="img/osaka.jpg"">
+                        <span class="find-footer-div__middle-left__div__span">150 members |</span>
+                        <span class="find-footer-div__middle-left__div__span__two">Active</span>
+                    </div>
+                </div>
+                <div class="find-footer-div__bottom__right">
+                    <img class="find-footer-div__right__img find-footer-div__right__img__down" src="img/kojacat.jpg">
+                    <div class="find-footer-div__middle_right__likes find-footer-div__middle_right__likes__down">
+                        <i class="fa-solid fa-heart find-footer-div__middle_right__likes__i"></i>
+                        <span>3578</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </footer>
+
+
+            <nav class="nav-bar nav-bar__friends">
+                <ul id="nav-bar-div__ul">
+                    <li class="nav-bar__li nav-bar__li-friend">
+                        <a href="friends.html">
+                        <i class="fa-regular fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="nav-bar__li nav-bar__li-chat">
+                        <a href="chats.html">
+                        <i class="fa-regular fa-comment"></i>
+                        </a>
+                    </li>
+                    <li class="nav-bar__li nav-bar__li-magnify">
+                        <a href="find.html">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                    <li class="nav-bar__li nav-bar__li-ellipsis">
+                        <a href="more.html">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                        <div class="main-header-bar-right__gear"></div>
+                        <div class="nav-bar-circle__chat">1</div>
+                        <div class="nav-bar-cicle__ellipsis"></div>
+                </ul>
+            </nav>
+        
+
+    </main>
+
+    <div id="no-mobile">
+        <span>화면을 줄여주세요.</span>
+    </div>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/cc09770187.js" crossorigin="anonymous"></script>
+</body>
+</html>
