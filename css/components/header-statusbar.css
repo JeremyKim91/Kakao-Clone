@@ -9,7 +9,7 @@
 .header-statusbar-left {
   display: flex;
   justify-content: flex-start;
-  width: 50%;
+
   align-items: center;
 }
 

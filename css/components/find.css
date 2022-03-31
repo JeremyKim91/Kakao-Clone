@@ -50,7 +50,6 @@
   left: 90px;
   top: 140px;
 }
-
 /**Nav**/
 .main-header-bar-right__gear {
   background-color: tomato;
@@ -70,6 +69,7 @@
   font-weight: bold;
   color: rgba(0, 0, 0, 0.3);
   font-size: 17px;
+  padding-bottom: 100px;
 }
 
 .find-footer-div__top {

@@ -38,11 +38,14 @@
   font-size: 30px;
   color: rgba(0, 0, 0, 0.8);
 }
+.nav-bar__li-chat {
+  position: relative;
+}
 .nav-bar-circle__chat {
   background-color: tomato;
   position: absolute;
-  bottom: 35px;
-  left: 185px;
+  bottom: 20px;
+  left: 15px;
   border-radius: 50%;
   font-size: 15px;
   color: white;
