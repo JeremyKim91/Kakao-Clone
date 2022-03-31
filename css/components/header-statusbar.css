@@ -1,30 +1,30 @@
 #header-statusbar-div {
   display: flex;
-  width: 100%;
+  width: 99%;
   align-items: center;
-  justify-content: center;
   font-size: 16px;
   font-weight: 600;
+  position: relative;
 }
 .header-statusbar-left {
+  width: 50%;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
-
   align-items: center;
 }
 
 .header-statusbar-middle {
   display: flex;
-  position: relative;
-  left: 60px;
+  position: absolute;
+  left: 200px;
   font-weight: bolder;
   align-items: center;
 }
-
 .header-statusbar-right {
+  width: 99%;
   display: flex;
   justify-content: flex-end;
-  width: 99%;
   align-items: center;
 }
 .header-statusbar-statusbar {
