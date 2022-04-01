@@ -36,12 +36,22 @@
   box-shadow: 0 0px 0px 1px rgba(0, 0, 0, 0.1);
   margin-right: 10px;
 }
-#header-statusbar-div {
+.chatroom-statusbar-div {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  margin-bottom: 20px;
+
   position: fixed;
   box-sizing: border-box;
   top: 0px;
   z-index: 3;
   width: 100%;
+}
+.general-main-top {
+  margin-top: 50px;
 }
 .chat-room-header-div {
   position: fixed;
@@ -57,9 +67,13 @@
   color: rgba(0, 0, 0, 0.8);
 
 }
-#general-main {
+#chat-room-main {
   height: 2000px;
-}
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.9);
+  }
+
 
 .chat-room-main__top {
   margin: 150px 20px;
