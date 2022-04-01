@@ -1,28 +1,28 @@
 #header-statusbar-div {
   display: flex;
-  width: 99%;
   align-items: center;
   font-size: 16px;
   font-weight: 600;
-  position: relative;
+  justify-content: center;
 }
-.header-statusbar-left {
-  width: 50%;
+.header-statusbar-statusbar {
+  width: 33%;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+}
+.header-statusbar-statusbar:first-child {
+  display: flex;;
   justify-content: flex-start;
   align-items: center;
 }
 
 .header-statusbar-middle {
   display: flex;
-  position: absolute;
-  left: 200px;
   font-weight: bolder;
   align-items: center;
+  justify-content: center;
 }
 .header-statusbar-right {
-  width: 99%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
