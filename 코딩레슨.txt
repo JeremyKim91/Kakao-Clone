@@ -1,0 +1,465 @@
+크롬  비쥬얼스튜디오 깃허브
+HTML 뼈대   링크  CSS 근육 살  링크 어떻게 보이는지?
+ 
+모든 브라우저가 뇌가 필요하진 않음
+인터랙티브 한 사이트 필요  자바스크립트 interaction
+
+브라우저는 모든 콘텐트를 보여줌  에러가 있어도 상관없이
+-> 페이지에 무슨 문제가 있는지 모름
+
+글을 입력 시 태그를 붙여서 작성
+<xx> 텍스트 </xx>   /를 이용해 태그를 닫지 않으면
+뒤에 글자들도 전부 적용됨
+H1~6 까지 헤드라인 태그   h7부터는 없음
+
+UL  unordered 정렬되지 않은 리스트
+LI  목록    점으로 표기 - -  - 
+OL 정렬된 리스트   1,2,3,4 vyrl
+
+*도움되는 확장 Expansion
+코드 닫기등 보완해주는 확장  Prettier code formatter
+설정방법 - 세팅->세팅 _ editer 타이핑 -> format on save 박스체크
+
+<a>   anchor -> 다른 사이트 이동
+<href> hyperlink reference
+href 는 다른 코드와 작동 x  'a' 와 함께 작동
+a href 사이 space 가 있어야 작동
+=target="_self"> 현재창
+_blank  새창 열기
+
+<img> 는 자동 닫기라  따로 닫는 태크 / 안해도 됨
+<img /> 
+
+같은 폴더 내 이미지를 사용할 수도 인터넷 링크를 할 수도 있음.
+
+html 은 처음에 <!DOCTYPE html> 를 입력해서
+브라우저에게 html 이야~ 라고 알려줄 수 있음
+
+<head> invisible setting 페이지에 관한 환경 설정
+head에 뭔가 적어도 안나타남
+보여지 하려면 body 에 적어야함 
+body> shows contents what we see 보이는 부분
+
+
+head - title: 창 이름 보이게 함
+
+<link rel="shorcut icon"
+
+meta tag = 추가 정보 (부가 정보) = extra data
+
+구글링 tag 서치 시 검색어에 mdn 붙이면 쉬움 
+
+w3school 쓰지 말기
+
+More Tag 레슨
+tag 동시에 바꾸려면 태그 선택 후 Command 나 ctrl+D
+
+
+<title> </title> 사이트 창 이름을 정한다.
+<img 는 self-closing attribute이다.
+img는 local 폴더에서도 사용 가능
+반드시 같은 폴더에 있어야 함.
+How: src="xxxx.jpg" 입력하면 됨
+
+<cite> 쓰면 글자 클릭하면 링크 이동하게 가능
+cite 글자 이탈릭인데 그 전에 <code>로 시작하면
+정글자로 가능
+
+a href= 에서 새창열기 target=_blank 그대로 _self">
+
+
+Form Tags
+<input> 계정 생성이나 아이디 비번 입력 등 기능 예시
+placedholder attribute로 박스 안 예시 이름 넣기 가능
+type=file 로 파일 첨부기능
+type=file value="계정 생성" 처럼 사용
+
+<label for 과
+<input id= 동일하면 아무 곳 누르면 동일 작동!
+-> id 는 고유한 unique  input 하나당 id 하나만 가능 
+
+<div> divison 
+div = 박스라 생각하면 됨. 
+input 박스 구역을 구분하려면 div 사용
+
+
+<header> 헤드라인
+<main> 메인
+<fotter> 꼬릿말
+-> <div> id=header  로 대체할 수 있찌만
+이보단 header 자체로 훨씬 좋은 코드
+<span> 짧은 text 를 위한 태그
+ex) hello 는 <p>보단 <span>으로 작성
+-> 이런 tag를 semantic tag 라고 함
+효율적인 코드 작성이며 팀원들도 이해하기 쉬움
+예전엔 div 로 떡칠 되어있었음.
+
+
+2/24
+1) HTML 과 CSS 코드를 같은 파일에 두거나
+2) 따로 분리하는 것 (전문가들 추천)
+
+2/26
+css cascading  위에부터 차례대로 코드 읽음
+div 박스 옆에는 아무것도 오지 않음.
+그러나 <span> <image> 등은 옆에 다른 태그 위치가됨 inline 이라 부름
+이런 요소를 block 이라고 함. = 옆에 아무것도 오지 못함.
+
+block  inline 상호 변경이 가능
+eg) display: block;  
+inline 은  width 와 height 를 가질 수 없음.
+block 은 width 와 height 가짐
+margin xxpx nnpx 상하 좌우  순서로 커짐
+  1px 2px 3px 4px   위 오른 아래 왼
+  div 경계(margin)이 body margin에 다으면 위아래 같이 움직임
+  이를 padding 으로 구분할 수 있음
+  div 에 id를 부여해 여러개 개별로 스타일 부여 가능 
+  eg)  #div {color:}
+    
+  style 에서 *은 전체 적용됨
+
+  *margin 바깥쪽 여백  padding 안쪽 여백을 의미
+
+3/1
+  <style>에서 코드에 id 부여 후
+  #example, #example2 { }  작성 시 동시 적용 -> 훨씬 간결한 코드
+  class 부여 시 사용법
+  eg) <style> 에서 .exampel   #은 id 에 사용
+  class 는 여러개 부여 가능 예시) <span class: tomato apple> 
+  id는 제약이 많음. class 사용범위 넓음
+  
+  -display: inline, inline-block, block 은 좋은 방법이 아님. 반응형이 아니라
+  화면마다 보이는게 달라짐.
+  flexbox 가 그 대안
+  [3개 규칙]
+  자식 엘리먼트에 어떤 것도 적으면 안됨 부모 엘리먼트에만 한다.
+  ex) <div> =자식 엘리먼트  <body> =부모 엘리먼트
+  main axis = 꼭 수평은 아님(바뀔 수 있음)   cross axis  수직(바뀔 수 있음)
+  
+  
+  justyfy-contents 는 main axis에서 주축
+  align-item 은 cross axi  교차축에 적용
+  height 에 단위는 px 도 있지만 기기별 다르게 적용되는 vh 도 사용 가능
+  flex-wrap: <div> 박스가 여러개 있을 때 화면이 좁아지면 박스가 아래로 내려감
+  flex-direction: default 값은 row 임 그러나 reverse 로하면 반대로 됨
+                coulum 을 하면 주축 교차축이 바뀜 
+                ->즉 justyfy-contents 가 수직으로 바뀌는 것임
+
+Position 은 레이아웃보다는 위치를 아주 미세하게 옮기고 싶을 때 사용
+position: static 은 defult 값으로 레이아웃이 박스를 처음 위치하는 곳에 두는 것
+position: relative 는 처음 위치했던 자리로부터 조정함 *기억하기
+absolute 는 <div> <div> <- 부모 박스에 상관 없이 이동 =절대적 
+
+HTML 코드를 건드리지 않고 Pseudo Selector 통해서. 콜론 ':' 를 붙여줘야 함.
+ex) div:last-child{background-color: 와 같이 사용하면 더 깔끔
+-> class 나 id 를 사용하지 않고 더 깔끔하다는 얘기
+
+2022-03-05
+special Selector = combinator
+>  부모 안 자식 
+ex) p > span
++ 같은 형제간 (바로 뒤에 와야 됨)
+div span 으로 쓰면 div 안 모든 span 에 적용됨
+~  같은 형제간 (바로 뒤에 오지 않아도 됨)
+활용예시
+input[type="password"] {}  -> type="password"만 선택해서 꾸밈
+^ -> 끝에 오는 경우,  $ -> 앞에 오는 경우
+
+attribute 중 ~="exmaple" 을 쓰면 exmample 이 포핟된 태그에 적용
+
+-selector -> state 에 대해
+attribute  active(해당요소를 마우스로 클릭했을 때 효과 적용), 
+focus(키보드로 선택됐을 시), hover(마우스가 요소 위 있을 때 적용),
+visited(link에 적용 ex.방문했던 사이트
+링크는 다른 색으로 표시), focusd-within(focus 상태인 자식을 가진 부모엘리먼트에 적용)
+
+다른 요소와 결합하여 state 사용이 가능
+ex) form:hover input {background-color: seagreen}
+  ->해석: form에 hover 상태를 가하면 input의 배경색이 변경
+
+  3가지 좋은 selector
+  eg) ::placeholder {color: yellow;}-> placeholder 의 색 변경 등 활요 ㅇ가능
+  ex) input::placeholder{}
+  ::selection {color: yellow;} 글 드래그 하면 배경색이 생김
+  ex) p::selection
+  ::first-letter -> 첫 글자만 크게 꾸며줌
+
+  Colors
+  색상은 웹사이트에서 extension 프로그램"color picker"로
+  (1)색값을 따오거나 #FF52L 
+  (2)RGB 255, 255, 0)   값을 가져올 수 있음
+  RGBA 는 색상값에 opacity (투명도)를 조절하는 값임
+
+  Variables(변수) 또는 custom property 라고 명명
+  프로그래밍처럼 값을 부여해서 저장해놓고 사용
+ex) :root {
+  --main-color: #452fe; }   하고 다른 css color 값에 var(--main-color) 를 설정하면
+  한번에 싹 바꿀 수 있음
+  --default-border 도 있고 다양함
+  *검색 시 css custom properties 를 해서 더 많은 예시 볼 수 있음
+
+  transition 어떤 상태에서 다른 상태로의 변화를 애니매이션으로 보여주는 것도
+  ex) hover 이용해 색 반전 그러나 그냥 사용하면 애니매이션 없이 쉭 바뀜
+  사용법: :hover 가 없는 쪽에 작성해야 함*주의* -> 원래 element 에 작성해야 함.
+  transition: background-color 5s ease-in-out  -> 5초 동안 easeinout 된다는 뜻
+  배경색뿐 아니라 color, padding, border-radius 등 전부 변경 가능
+  all(변하는 모든 것에 적용)
+  작성법
+  <style>
+  span {color:     background-color,   padding,
+  transition: background-color: 10s easy-in-out}
+  span:hover {
+
+  }
+  transition animation 변화 미리보기 사이트 - Ceaser
+  linear 직선상 움직임 
+  easy-in 시작에서 빠르게 움직임   easy-out: 끝에서 느려짐
+  easy-in-out 처음 느리게 시작 - 가속 - 느려지면서 끝
+  cubic-bezier 코드로 더 다양한 효과의 애니매이션 사용 가능
+  *all 을 사용하는게 가장 흔함
+
+Transformation
+border-radius 에 50% 를 주면 원형이 됨.
+transform 엘리먼트를  사용하면 
+  rotateY(85deg) 이미지를 85도 3d로 돌리는 것
+   rotateX Z 도 있음
+  Scale(x,y,z(숫자 넣기))
+   ex)scale(5,2,1)
+  translate(축에서 이동) : 다른 box element에 영향을 미치지 않고
+  움직이고 싶을 때 사용함.
+   ex) translateX(50px) 
+   *transformation 도 다른 것과 조합할 수 있음.
+    ex)transition 과 애니매이션 효과
+   다시 강조하지만 transition은 root tag 쪽에 있어야 함.
+   *transfrom mdn 사이트에서 많은 예시가 많음.
+   eg) <style>
+        img {
+              border: 10px solid black;
+              border-radius: 50%;
+              transform: rotateX(50deg);
+        }
+        이렇게만 작성하면 그냥 정적인 상황
+
+        img {
+            border: 10px solid black;
+            transition: transform 5s(시간) ease-in(변형방식)
+        }
+        img:hover {
+          transform: rotatey(360deg) scale(50);
+        }
+
+   애니매이션 만들기
+   eg) @keyframes SexyCoinFlip(커스텀 이름) {
+     from(커스텀) { transfrom:rotateX(0);}
+     to {transform:rotateX(360deg);}
+     }  또한 infinite 를 추가하면 계속 재생됨.
+     *몇몇 요소는 애니매이션화 못함. eg)font-size\
+     *도움 사이트 animista  
+    
+    eg)     @keyframes flip {
+            from {transform: translate(0%);
+            }
+            to {transform: translateX(50%);
+                }
+            } 
+        
+        div {animation: flip 5s ease-in-out; 
+            height: 100px; width: 100px; background-color: brown;
+        }
+
+
+     Media Query - css만 이용해서 
+     내 웹사이트를 본느 사람의 스크린의 사이즈를 알 수 있는 방법
+    eg) @media screen and (max-width: 600px) {
+      div { background-color: tomato;
+       }
+    }
+    orientation: landscape   -> 가로모드일 때
+    *검사방법: inpect - device toolbar 를 이용해
+    폰 브라우저 기종 별 세로 가로모드 화면 적용 확인
+  
+    eg) @media print 를 이용해 프린트 화면에도 적용 가능
+
+    개발자 되기위한 유용한 프로그램 및 코드 관리
+    1. Git: 파일 변경내역을 추적해주는 시스템 keeps track of our files
+    2. GItHub: 파일 내역과 파일을 업로드하는 공간
+    VSC에서 github에서 만든 project 폴더를 연동시킨다.
+
+    이제 vsc 에서 readme 파일을 만든다. readme 파일은 markdown (md) 서식 문서이다.
+     readme 는 모든 repository 파일이 가져야하는 파일
+     
+     Github - repository 에서 무언가를 작성하면 publish 를 한다
+     to publish, 해당 파일에 commit 을 한다. commit: repository 를 저장하는 시점.
+     
+     commmit 후 publish 를 하면 비로소 웹 github 에서도 볼 수 있다.
+     commit 의 title 은 당신이 무엇을 저장했는지에 대해 작성한다.
+     VSC 에서 reademe 등을 업데이트 하였을 때, github desktop에서 변경사항을 안다.
+     다시 commit을 해주고 push origin  까지 해줘야  github web 으로 올라간다.
+    
+    2022/03/12
+    깃허브에 올리고 싶지 않은 파일이 있을 때 박스를 체크해주면 된다.
+    그러나 매번 그러기에 귀찮기에 
+    1. github desktop 에서  .github 파일을 추가한다.
+    2. gitignore 에  파일 이름을 입력한다.  ex) .win_store
+
+     <클론코딩 - 코코아톡>
+     첫 페이지 파일이름은 index.html 로 한다 -> 대부분 웹 서버가 default로 index.html을
+     찾는다.
+     <html 단축키 shotcuts> 코드 앞글자 쓰고 원하는 코드 목록 나오면 enter 치면 됨.
+     
+    class 이름을 정할 때 box 나 column과 같은 이름만 쓰면 분명히 다시 쓰기 때문에
+    더 구분하기 쉽게 status-bar_column 등의 긴 이름으로 사용한다.
+    코드를 작성하는데 아직 미정이거나 넣을 자리 등만
+    확보하는 경우 comment 를 남긴다.
+    Comment = 프로그래머만 볼 수 있게 남기는 기록
+    How: <!--작성-->  작성하면 알아서 뜸.
+    
+    class 작성 시 프로그래머들이 헤갈리지 않기 위해
+    BEM 법칙을 따르게 됨.
+    B=Block Component
+    E=Element __   eg) btn__price , btn__text
+    M=Modifier --   eg) btn--orange, btn--big
+    
+    아이콘 추가 2가지 옵션
+    1. 직접 구 이미지 만들고 추출하거나 svg 형식 이미지 사용.
+    2. heroicons 나 awesome font 웹사이트에서 사용 가능. 무료이다.
+    how: 맘에 드는 아이콘을 복사하여 붙여넣기 하면 된다.
+    -> 이후 css 로 꾸며줄 수 있음.
+    (Font Awesome 에 무료 유료 아이콘도 있음).
+   
+   *이런 외부에서 재료를 가져올 때는 <script> 코드 등을 따와야 함
+    How: <script> 코드는 항상 </body> 전 마지막에 있어야 함.
+
+    css 파일 넣을 때
+    link:css 입력하면 자동으로 양식 가져온다.
+
+    글자 font-family 로 글자 바꾸기 가능
+    font 사이트: google font
+     <link> 나 @import 로 가져오는 것이 가능하다.
+    하나의 font 안에서 쓰지 않을 폰트를 빼는 것이 로딩속도에 더 도움이 되고
+    자신이 무엇을 쓸지 안쓸지 미리 아는 것도 중요하다.
+    How: <style.css 나 <link>로 코드 가져온 후
+    폰트 바꿀 곳을 정했으면 eg) body {} 에 font-family 붙여넣기 하면 그 폰트가
+    적용된다.
+
+    같은 선상에서 어느 글자나 아이콘을 중심으로 넣고 싶을 때 쓰는 css hack(기술)
+    css hack  -  이상하지만 작동은 잘 되는 중앙에 오는 css hack 코드
+    -----------------------
+    display: flex;
+    justify-contetn: center;
+
+      .status-bar__column {
+      width: 33%;
+
+      outline div 는 flex   center 을 주고
+      각 column 에 width: 33%;  
+      자식 div 에    맨 왼쪽은  flex-start,  중앙은 center 맨 우측은 flex-end
+------------------------
+    margin:auto; margin-right:auto 써보고 연습하기! 
+    2. width: 33% 주고 (div 3개일 시) 중앙 justify center 마지막 flex-end 쓰면 됨
+
+    css reset 하는 법 - 기본 default 값을 다
+    리셋해주는 것으로 css 파일을 하나 더 만들어서
+    import를 해준다. 이 방법이 link 보다 더 효율적이다.
+    @import "reset.css";   
+
+    크롬 확장프로그램 중 page ruler redux 를 사용하면 margin padding 등 간격을 측정할 수 있음
+
+    not 이용한 css 사용
+    eg) #login-form input:not([type="submit"]){
+      border-bottom: 1px solid black;
+      transition: border-color 0.5s ease-in-out
+    }
+    -> 해석: login-form input 에서 type=submit 이 아닌 경우만 아래 사항 적용.
+
+    2022.03.15
+    css파일 내에서 코멘트를 남길 때 태그를
+    how: /* Components */
+
+    <form> 태그는 두가지 속성(attribute) 있다.
+    1. <form action="nextpage.html" -> 어떤 페이지로 넘어갈 지 알려줌.
+    2. <form method=   두가지 method 가 있음 . (1) Post -> backend 서버에서 전송됨.
+          (2) Get -> 보안에 취약함. username 과 password 는 절대 get 에 보내면 안됨 .
+            -> URL에 포함되도 될만한 정보만 보내야 함.
+
+-friends page-
+Friedns 페이지부터는 하단bar 가 들어가는데 이 하단bar는 Navigation 이라고 한다.
+VSC 가 알아서 짜주는 shortcut ->  How: nav>ul>li*4>a
+Nav 아이콘은 User Icon 사이트에서 가져올 수 있다.
+*박스안에 아이콘들이 초과되어 없어질 때(잘릴 때) 쓰는 매직 code 라인
+how: box-sizing: border-box;
+
+메세지에 숫자 띄우기 -> only 메시지에서만 나오게 해야함
+다시 remind: position absolute 는 부모 position relative 를 중심으로 움직임.
+
+2022/03/22
+Z인덱스로 채팅창 상단 헤드부분 배경색 서로 겹치는 문제 등을 해결 가능하다
+-> layer 의 순서가 몇번째 인지를 나타냄.
+how: css에 z-index:0~숫자 (0=default) 숫자가 클 수록 아래 숫자를 덮음.
+
+CSS에서  children 끼리  order:1 order:0  값 지정해주면 서로 flip 위치가 바뀜.
+ 또는 flex-direction: row-reverse 로 하면 더 쉽게 변경 가능.
+
+ 채팅화면 키보드와 키보드 위 바
+ form 도 되고 div 도 됨
+
+ <button> </button> 안에 icon 집어넣을 수도 있음
+
+ splesh 화면 만들기
+ position absolute 하고 부모엘리먼트는 body 를 기준
+ 높이 너비 100vh=100%  wh 로 하고 위치 영점 잡으면 노랑으로 꽉 참.
+
+ 애니메이션이 종료되도 다시 돌아오는데 이는 애니메이션이 종료됐기 때문으로
+ css 작성 코드 뒤에 forwardㄴ 를 쓰면 다시 돌아오지 않는다.
+ 그러나 forwardㄴ 사용 후에도 클릭을 할 수 없는데 이는
+ html 에 여전히 남아있기 때문으로  visibility:0 을 사용하면 된다.
+
+ *CSS 작성 tip 추가
+ .class .inside-class 로 작성하면  다른 부분 inside-class 가 아닌
+ .class 속에 있는 .inside-class 만 특정해서 작동한다.
+
+ animation 이 뭔가 어색하거나 이상하게 작동할 때
+ will-change 를 사용하면 browser 에게 무언가를 change 할 거라고 알려주기 때문에
+ 좀 더 부드럽게 잘 animation 이 작동한다.
+ how: css에서 will-change: transform 을 적으면 잠시 후 transform; animation 이 있을
+ 것이라고 얘기해줌.
+
+ 2022/03/25
+ box-shadow
+box-shadow를 통해 그림자를 구현할 수 있습니다.
+border-radius와 box-shadow: inset을 통해 휴대폰의 곡면에 입체감을 줄 수 있습니다.
+overflow-x
+overflow-x 속성으로 width를 초과한 부분을 어떻게 처리할 지 설정할 수 있습니다.
+많이 사용되는 속성값으로, hidden, scroll 이 있습니다.
+hidden의 경우, 이미지의 일부를 보이게 하거나 slider를 구현할 때 많이 사용됩니다.
+Pseudo-element
+placeholder와 같은 의사 요소(Pseudo-Element)들의 스타일을 설정할 수 있습니다.
+placeholder(::placeholder)의 글자색을 바꾸거나, 첫 번째 글자(::first-letter)만 크기를 키우거나, 첫 번째 줄(::first-line)의 줄간격을 바꿀 수 있습니다.
+Search 파트
+해설의 search 파트에서, input에 text를 가득 채우면 텍스트가 icon을 덮게 되는 것을 볼 수 있습니다.
+이를 해결하기 위해 .search에 flex를 적용함으로써, input의 텍스트가 icon을 덮지 않게 할 수 있습니다.
+
+
+assingment10 해설
+현재 진행중인 곡의 control box(첫 번째 스크린 하단의 검정색 box)
+position: absolute로 구현할 수 있습니다.
+absolute로 지정한 element를 가운데 정렬하는 방법은 다양합니다.
+예시에선 left: 0; right: 0; margin-left: auto; margin-right: auto; width: (특정 값); 으로 구현했습니다.
+이전 챌린지 중에 언급했던 transform: translate(..)로도 구현할 수 있습니다.
+left: 0; transform: translateX(-50%);
+진행 bar(두 번째 스크린 하단 부분)
+답안에서의 구현한 방법은 이미 재생된 부분, 현재 재생 위치, 전체 재생 길이 를 형제관계로 나열하고, 이미 재생된 부분과 현재 재생 위치에 absolute를 적용해 구현했습니다.
+absolute는 해당 요소를 문서의 흐름에서 벗어나게 합니다. 만약 absolute를 사용하지 않았다면 세 부분은 위에서 아래로 나열되었을 것입니다.
+답안의 방법 말고도 전체 재생 길이 의 자식으로 이미 재생된 부분과 현재 재생 위치이 있는 구조로 구현해도 됩니다.
+오히려 이쪽이 직관적이며, 코드 작성이 더 쉬울 수 있습니다.
+opacity
+opacity로도 회색을 표현할 수 있습니다.
+opacity는 불투명도를 조절하는 속성으로, text 뿐만 아니라 image를 비롯한 모든 요소에 적용할 수 있습니다.
+
+-------------------------------------
+*span 등 중앙 보내기 또 다른 tip 
+ How:
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -----------------------------------

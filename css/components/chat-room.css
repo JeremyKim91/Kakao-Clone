@@ -11,14 +11,23 @@
   transform: translateX(-50%);
 }
 #date-box-div {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+.chat-room-header-div :first-child {
+  margin-left: 10px;
+}
+.chat-room-header-div .fa-bars {
+  margin-right: 10px;
+}
+#date-box-div__scan {
+  padding: 8px;
   background-color: rgba(0, 0, 0, 0.3);
   color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
-  padding: 8px;
-  top: 110px;
-  left: 50%;
-  transform: translateX(-50%);
+  
+
 }
 .chat-room-main__top-img {
   width: 50px;
@@ -27,8 +36,33 @@
   box-shadow: 0 0px 0px 1px rgba(0, 0, 0, 0.1);
   margin-right: 10px;
 }
+#header-statusbar-div {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0px;
+  z-index: 3;
+  width: 100%;
+}
+.chat-room-header-div {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+  padding-top: 40px;
+  background-color: #c4ffff;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+
+}
+#general-main {
+  height: 2000px;
+}
+
 .chat-room-main__top {
-  margin: 90px 20px;
+  margin: 150px 20px;
   display: flex;
   align-items: center;
 }
@@ -117,23 +151,36 @@
   right: 0px;
   margin-right: 20px;
 }
-.chat-room-main__bottom__right-arrow-i {
-  padding: 10px 14px;
+#chat-room-main__bottom__right-i button {
+  padding: 6px 10px;
   font-size: 25px;
   background-color: var(--main-bg-color);
   border-radius: 50%;
-  margin-left: 15px;
+  margin-left: 10px;
 }
-.chat-room-main__bottom input {
-  transition: all 0.5s ease-in-out;
+#chat-room-main__bottom-input {
+  position: fixed;
+  left: 80px;
+  transition: all .5s ease-in-out;
 }
 .chat-room-main__bottom:focus-within .chat-room-main__bottom-i,
 .chat-room-main__bottom:focus-within .chat-room-main__bottom__right-smile-i,
-.chat-room-main__bottom:focus-within .chat-room-main__bottom__right-arrow-i {
+.chat-room-main__bottom:focus-within button {
   display: none;
 }
 
 .chat-room-main__bottom:focus-within input {
-  width: 95%;
-  transform: translateX(10px);
+  width: 75%;
+  
+}
+@keyframes typingchat {
+  0% {transform: translateX(20px);
+  }
+  100% {
+    transform:translateX(-70px);
+    }
+}
+#chat-room-main__bottom-input:focus-within {
+  animation: typingchat 1s ease-in-out forwards;
+
 }
