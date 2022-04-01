@@ -76,7 +76,7 @@
 
 
 .chat-room-main__top {
-  margin: 150px 20px;
+  margin: 50px 20px;
   display: flex;
   align-items: center;
 }
@@ -110,7 +110,7 @@
   color: rgba(0, 0, 0, 0.5);
   position: absolute;
   right: 0px;
-  top: 260px;
+  top: 300px;
   font-weight: bold;
   flex-direction: row;
   align-items: flex-end;
